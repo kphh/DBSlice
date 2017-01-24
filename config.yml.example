@@ -1,0 +1,11 @@
+source:
+  adapter: mysql2
+  database: source
+  username: root
+  password: password
+
+destination:
+  adapter: mysql2
+  database: destination
+  username: root
+  password: password

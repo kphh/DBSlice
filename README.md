@@ -1,8 +1,13 @@
 # DatabaseSlice
 
-- Mass SQL INSERTs into target DB for maximum speed
-- Updates existing records
-- Handles polymorphic associations
+## Example Usage
+Provide database information and credentials in *config.yml*.
+
+```ruby
+db_slice = DatabaseSlice.new
+db_slice.pull(User, [14, 876, 943, 1069, 2347])
+db_slice.insert_and_sanitize
+```
 
 ## Public Methods
 
